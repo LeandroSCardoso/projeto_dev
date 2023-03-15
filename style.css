@@ -123,7 +123,8 @@ header {
 	font-size: 16px;
   border: 1px solid #fff;
   border-radius: 10px;
-	width: 102%; 
+	width: 100%;
+  box-sizing: border-box; 
   text-align: center;
 } 
 
@@ -133,7 +134,7 @@ header {
 } 
 
 .aviso {
-  display: inline-block;
+  display: none;
   background-color: #3caf2c; 
   padding-top: 10px;
   padding-bottom: 10px;
@@ -141,13 +142,14 @@ header {
 	font-size: 16px;
   border: 1px solid #fff;
   border-radius: 10px;
-	width: 103%; 
+  
+	width: 100%; 
   text-align: center;
   margin-top: 20px;
 }
 
 .retorno {
-  display: inline-block;  
+  display: none;  
   color: #fff;
 	font-size: 16px;
   border: 1px solid #fff;
@@ -155,6 +157,7 @@ header {
 	width: 100%; 
   margin-top: 20px;
   padding-left: 20px;
+  box-sizing: border-box; 
 }
 
 
@@ -168,4 +171,5 @@ header {
 	border-radius: 10px;
 	width: 100%;
 	margin-bottom: 20px;
+  box-sizing: border-box; 
 }
