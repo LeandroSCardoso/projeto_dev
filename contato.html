@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+	integrity="sha512-VcOrsFwIwTV+TQxJmyD8BOfnANUOJ6UJ9qf1W6z2GLYRwE6KB1JGi0p+6thOcI0y69JiaP9a8zIaY/X0+01w0w==" 
+	crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Contato</title>
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<nav>
+				<a href="index.html">Home</a>
+				<a href="contato.html" class="active">Contato</a>
+			</nav>
+		</div>
+	</header>
+
+	<div class="container">
+
+
+			<!-- <form action="https://target-api-simples.cyclic.app/generica" method="post"> -->
+
+			<div class="formulario">
+				
+				<input class="caixa_texto" type="text" name="nome" id="nome" placeholder="Digite o seu nome" required>
+
+				<input class="caixa_texto" type="email" name="email" id="email" placeholder="Digite o seu e-mail" required>
+
+				<textarea class="caixa_texto" name="mensagem" id="mensagem" placeholder="Digite sua mensagem" required></textarea>
+
+				<input class="but_envia" type="submit" value="ENVIAR">
+
+
+				<div id="aviso" class="aviso">
+					Seu e-mail foi enviado com sucesso!
+				</div>
+
+				<div id="retorno" class="retorno">
+					<h1>Retorno da API</h1>
+					<p>Verifique o retorno da API e mostra os dados abaixo no HTML:</p>
+					<P></P>
+					<P>Nome:</P>
+					<p>E-mail:</p>
+					<p>Mensagem:</p>
+				</div>				
+	
+			</div>
+			<!-- </form> -->
+
+
+	</div>
+</body>
+
+</html>
