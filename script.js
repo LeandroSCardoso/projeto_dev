@@ -26,7 +26,7 @@ async function EnviaFormulario(){
       headers: {"Content-type": "application/json"}
     }
     const response = await fetch(url, fetchOptions)
-    const responseData = await response.json()
+    const retornoApi = await response.json()
 
     // Elemento que vamos mostrar o retorno da api
     const nome_resp = document.querySelector("#nome_resp")
@@ -40,7 +40,7 @@ async function EnviaFormulario(){
     retorno.style.display = 'inline-block'
 
     //passando os valores enviados para os campos
-    nome_resp.innerHTML = JSON.stringify(responseData.apiRecebeu.nome)
-    email_resp.innerHTML = JSON.stringify(responseData.apiRecebeu.email)
-    texto_resp.innerHTML = JSON.stringify(responseData.apiRecebeu.texto)
+    nome_resp.innerHTML = JSON.stringify(retornoApi.apiRecebeu.nome)
+    email_resp.innerHTML = JSON.stringify(retornoApi.apiRecebeu.email)
+    texto_resp.innerHTML = JSON.stringify(retornoApi.apiRecebeu.texto)
   }
